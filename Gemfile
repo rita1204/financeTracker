@@ -30,6 +30,7 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'twitter-bootstrap-rails', '~> 4.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'devise-bootstrap-views', '~> 0.0.11'
+gem 'stock_quote', '~> 2.0'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

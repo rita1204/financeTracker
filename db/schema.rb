@@ -16,12 +16,12 @@ ActiveRecord::Schema.define(version: 2018_08_12_013729) do
   enable_extension "plpgsql"
 
   create_table "friendships", force: :cascade do |t|
-    t.bigint "users_id"
-    t.bigint "friends_id"
+    t.bigint "user_id"
+    t.bigint "friend_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["friends_id"], name: "index_friendships_on_friends_id"
-    t.index ["users_id"], name: "index_friendships_on_users_id"
+    t.index ["friend_id"], name: "index_friendships_on_friend_id"
+    t.index ["user_id"], name: "index_friendships_on_user_id"
   end
 
   create_table "stocks", force: :cascade do |t|
